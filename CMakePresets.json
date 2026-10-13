@@ -1,0 +1,33 @@
+{
+  "version": 5,
+  "cmakeMinimumRequired": { "major": 3, "minor": 30, "patch": 0 },
+  "configurePresets": [
+    {
+      "name": "base",
+      "hidden": true,
+      "generator": "Ninja",
+      "cacheVariables": { "DEVICE": "STM32F103x8", "CMAKE_EXPORT_COMPILE_COMMANDS": true }
+    },
+    {
+      "name": "debug",
+      "displayName": "Panda - Debug (CMSIS)",
+      "inherits": "base",
+      "binaryDir": "${sourceDir}/cmake-build-debug",
+      "cacheVariables": { "CMAKE_BUILD_TYPE": "Debug", "USE_HAL": false }
+    },
+    {
+      "name": "release",
+      "displayName": "Panda - Release (CMSIS)",
+      "inherits": "base",
+      "binaryDir": "${sourceDir}/cmake-build-release",
+      "cacheVariables": { "CMAKE_BUILD_TYPE": "Release", "USE_HAL": false }
+    },
+    {
+      "name": "debug-hal",
+      "displayName": "Panda - Debug (HAL available)",
+      "inherits": "base",
+      "binaryDir": "${sourceDir}/cmake-build-debug-hal",
+      "cacheVariables": { "CMAKE_BUILD_TYPE": "Debug", "USE_HAL": true }
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+/build/
+/cmake-build-*/
+/.idea/
+/.run/
+/CMakeUserPresets.json
+__pycache__/
+*.pyc

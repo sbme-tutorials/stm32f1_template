@@ -1,0 +1,11 @@
+#ifndef USART_PRIVATE_H
+#define USART_PRIVATE_H
+
+#include "stm32f1xx.h"
+
+#define USART1_BAUD_RATE 9600UL
+#define USART1_TX_PIN    9U
+#define USART1_RX_PIN    10U
+#define USART1_RECEIVE_ERROR_FLAGS (USART_SR_PE | USART_SR_FE | USART_SR_NE)
+
+#endif

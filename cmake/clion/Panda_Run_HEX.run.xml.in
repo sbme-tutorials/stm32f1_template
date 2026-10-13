@@ -1,0 +1,10 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Panda Run (HEX)" type="CMakeRunConfiguration" factoryName="Application"
+                 PROJECT_NAME="@CMAKE_PROJECT_NAME@" TARGET_NAME="flash"
+                 RUN_PATH="$CMakeCurrentExecutableName$"
+                 PROGRAM_PARAMS="--build &quot;$CMakeCurrentBuildDir$&quot; --target flash"
+                 WORKING_DIR="$PROJECT_DIR$" PASS_PARENT_ENVS_2="true"
+                 REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false">
+    <method v="2" />
+  </configuration>
+</component>

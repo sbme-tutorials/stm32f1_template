@@ -1,0 +1,14 @@
+{
+  "version": 5,
+  "configurePresets": [
+    {
+      "name": "local-debug",
+      "inherits": "debug",
+      "binaryDir": "${sourceDir}/cmake-build-local-debug",
+      "cacheVariables": {
+        "ARM_DIR": "C:/Tools/arm-gnu-toolchain",
+        "OPENOCD_BIN_DIR": "C:/Tools/openocd/bin"
+      }
+    }
+  ]
+}
